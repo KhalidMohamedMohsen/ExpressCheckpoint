@@ -1,6 +1,13 @@
-html 
-    head 
-        title=name
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        include ./Partials/head.pug
     body 
-        h1=name 
-        a()
+        include ./Partials/nav.pug
+        div 
+            h1 this is the home page 
+            p im testing how pug workes here as well as if the href are working 
+    footer 
+        include ./Partials/footer.pug
